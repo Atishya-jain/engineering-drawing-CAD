@@ -1,0 +1,196 @@
+\hypertarget{classOutput}{}\section{Output Class Reference}
+\label{classOutput}\index{Output@{Output}}
+
+
+Render and save class.  
+
+
+
+
+{\ttfamily \#include $<$Output\+Src.\+h$>$}
+
+
+
+Collaboration diagram for Output\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classOutput__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Picture \hyperlink{classOutput_aac99693b73661bf4af821aa5d32094ea}{Render\+Output3D} (Q\+Picture pi)
+\begin{DoxyCompactList}\small\item\em A Member function. \end{DoxyCompactList}\item 
+Q\+Picture \hyperlink{classOutput_aabbc20a5012e08ef1d242c2800ba8421}{Render\+Output2D} (Q\+Picture pi)
+\begin{DoxyCompactList}\small\item\em A Member function. \end{DoxyCompactList}\item 
+void \hyperlink{classOutput_a23f2365e8a4f60a0845de5e637266588}{save\+To\+File3D} (string fname)
+\begin{DoxyCompactList}\small\item\em A Member function. \end{DoxyCompactList}\item 
+void \hyperlink{classOutput_ae97e0cb97e7d7b5a8d2b044319a2f5b9}{save\+To\+File2D} (string fname)
+\begin{DoxyCompactList}\small\item\em A Member function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, vector$<$ bool $>$ $>$ \hyperlink{classOutput_a09326f8ecea28b8fafce2903753d508f}{Lookup\+For\+Hidden2D} \mbox{[}3\mbox{]}
+\item 
+map$<$ string, vector$<$ bool $>$ $>$ \hyperlink{classOutput_a0efdf7e2ffdd5375d925c1d41784e365}{Lookup\+For\+Hidden3D}
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ \hyperlink{classOutput_a24397893b0741447fdc351e5f66c2bfc}{Two\+D\+Graph} \mbox{[}3\mbox{]}
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ \hyperlink{classOutput_aae5a299ccc1830950c8e03cfe7863a4f}{Three\+D\+Graph}
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ {\bfseries Plane\+Proj}\hypertarget{classOutput_aecfac036be1c7e637a4be478604ba0dc}{}\label{classOutput_aecfac036be1c7e637a4be478604ba0dc}
+
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ {\bfseries Two\+D\+Graph\+Temp} \mbox{[}3\mbox{]}\hypertarget{classOutput_ab587641cf5674d83b02cf175c932e830}{}\label{classOutput_ab587641cf5674d83b02cf175c932e830}
+
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ {\bfseries Plane\+Proj\+Temp}\hypertarget{classOutput_aeab59c1c4e1e81f9df44657288561e99}{}\label{classOutput_aeab59c1c4e1e81f9df44657288561e99}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Render and save class. 
+
+This class contains the methods to render the object on screen as well as save it in a file. 
+
+\subsection{Member Function Documentation}
+\index{Output@{Output}!Render\+Output2D@{Render\+Output2D}}
+\index{Render\+Output2D@{Render\+Output2D}!Output@{Output}}
+\subsubsection[{\texorpdfstring{Render\+Output2\+D(\+Q\+Picture pi)}{RenderOutput2D(QPicture pi)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Picture Output\+::\+Render\+Output2D (
+\begin{DoxyParamCaption}
+\item[{Q\+Picture}]{pi}
+\end{DoxyParamCaption}
+)}\hypertarget{classOutput_aabbc20a5012e08ef1d242c2800ba8421}{}\label{classOutput_aabbc20a5012e08ef1d242c2800ba8421}
+
+
+A Member function. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOutput_aabbc20a5012e08ef1d242c2800ba8421}{Render\+Output2\+D()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a string argument. \\
+\hline
+{\em flag3\+Dfile} & boolean character to tell the type of file (3\+D/2D).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOutput_aabbc20a5012e08ef1d242c2800ba8421}{Render\+Output2\+D()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em picture} & object a Q\+Picture argument. \\
+\hline
+\end{DoxyParams}
+\index{Output@{Output}!Render\+Output3D@{Render\+Output3D}}
+\index{Render\+Output3D@{Render\+Output3D}!Output@{Output}}
+\subsubsection[{\texorpdfstring{Render\+Output3\+D(\+Q\+Picture pi)}{RenderOutput3D(QPicture pi)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Picture Output\+::\+Render\+Output3D (
+\begin{DoxyParamCaption}
+\item[{Q\+Picture}]{pi}
+\end{DoxyParamCaption}
+)}\hypertarget{classOutput_aac99693b73661bf4af821aa5d32094ea}{}\label{classOutput_aac99693b73661bf4af821aa5d32094ea}
+
+
+A Member function. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOutput_aac99693b73661bf4af821aa5d32094ea}{Render\+Output3\+D()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a string argument. \\
+\hline
+{\em flag3\+Dfile} & boolean character to tell the type of file (3\+D/2D).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOutput_aac99693b73661bf4af821aa5d32094ea}{Render\+Output3\+D()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em picture} & object a Q\+Picture argument. This function is used to render 3\+D/\+Isometric graph on a 2D screen of your system. \\
+\hline
+\end{DoxyParams}
+\index{Output@{Output}!save\+To\+File2D@{save\+To\+File2D}}
+\index{save\+To\+File2D@{save\+To\+File2D}!Output@{Output}}
+\subsubsection[{\texorpdfstring{save\+To\+File2\+D(string fname)}{saveToFile2D(string fname)}}]{\setlength{\rightskip}{0pt plus 5cm}void Output\+::save\+To\+File2D (
+\begin{DoxyParamCaption}
+\item[{string}]{fname}
+\end{DoxyParamCaption}
+)}\hypertarget{classOutput_ae97e0cb97e7d7b5a8d2b044319a2f5b9}{}\label{classOutput_ae97e0cb97e7d7b5a8d2b044319a2f5b9}
+
+
+A Member function. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOutput_ae97e0cb97e7d7b5a8d2b044319a2f5b9}{save\+To\+File2\+D()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a string argument. \\
+\hline
+{\em flag3\+Dfile} & boolean character to tell the type of file (3\+D/2D).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOutput_ae97e0cb97e7d7b5a8d2b044319a2f5b9}{save\+To\+File2\+D()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a string argument. This function is used to save our 2D file in a output file. \\
+\hline
+\end{DoxyParams}
+\index{Output@{Output}!save\+To\+File3D@{save\+To\+File3D}}
+\index{save\+To\+File3D@{save\+To\+File3D}!Output@{Output}}
+\subsubsection[{\texorpdfstring{save\+To\+File3\+D(string fname)}{saveToFile3D(string fname)}}]{\setlength{\rightskip}{0pt plus 5cm}void Output\+::save\+To\+File3D (
+\begin{DoxyParamCaption}
+\item[{string}]{fname}
+\end{DoxyParamCaption}
+)}\hypertarget{classOutput_a23f2365e8a4f60a0845de5e637266588}{}\label{classOutput_a23f2365e8a4f60a0845de5e637266588}
+
+
+A Member function. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOutput_a23f2365e8a4f60a0845de5e637266588}{save\+To\+File3\+D()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a string argument. \\
+\hline
+{\em flag3\+Dfile} & boolean character to tell the type of file (3\+D/2D).\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOutput_a23f2365e8a4f60a0845de5e637266588}{save\+To\+File3\+D()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a string argument. This function is used to save our 3D object in a file for output. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Output@{Output}!Lookup\+For\+Hidden2D@{Lookup\+For\+Hidden2D}}
+\index{Lookup\+For\+Hidden2D@{Lookup\+For\+Hidden2D}!Output@{Output}}
+\subsubsection[{\texorpdfstring{Lookup\+For\+Hidden2D}{LookupForHidden2D}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<$bool$>$ $>$ Output\+::\+Lookup\+For\+Hidden2D\mbox{[}3\mbox{]}}\hypertarget{classOutput_a09326f8ecea28b8fafce2903753d508f}{}\label{classOutput_a09326f8ecea28b8fafce2903753d508f}
+This is orthographic projections hidden edges \index{Output@{Output}!Lookup\+For\+Hidden3D@{Lookup\+For\+Hidden3D}}
+\index{Lookup\+For\+Hidden3D@{Lookup\+For\+Hidden3D}!Output@{Output}}
+\subsubsection[{\texorpdfstring{Lookup\+For\+Hidden3D}{LookupForHidden3D}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<$bool$>$ $>$ Output\+::\+Lookup\+For\+Hidden3D}\hypertarget{classOutput_a0efdf7e2ffdd5375d925c1d41784e365}{}\label{classOutput_a0efdf7e2ffdd5375d925c1d41784e365}
+This is isometric projection hidden edges \index{Output@{Output}!Three\+D\+Graph@{Three\+D\+Graph}}
+\index{Three\+D\+Graph@{Three\+D\+Graph}!Output@{Output}}
+\subsubsection[{\texorpdfstring{Three\+D\+Graph}{ThreeDGraph}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<${\bf point}$>$ $>$ Output\+::\+Three\+D\+Graph}\hypertarget{classOutput_aae5a299ccc1830950c8e03cfe7863a4f}{}\label{classOutput_aae5a299ccc1830950c8e03cfe7863a4f}
+This is the 3D graph \index{Output@{Output}!Two\+D\+Graph@{Two\+D\+Graph}}
+\index{Two\+D\+Graph@{Two\+D\+Graph}!Output@{Output}}
+\subsubsection[{\texorpdfstring{Two\+D\+Graph}{TwoDGraph}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<${\bf point}$>$ $>$ Output\+::\+Two\+D\+Graph\mbox{[}3\mbox{]}}\hypertarget{classOutput_a24397893b0741447fdc351e5f66c2bfc}{}\label{classOutput_a24397893b0741447fdc351e5f66c2bfc}
+This is the array of orthographic projections 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Include/\hyperlink{OutputSrc_8h}{Output\+Src.\+h}\item 
+Src/\hyperlink{OutputSrc_8cpp}{Output\+Src.\+cpp}\end{DoxyCompactItemize}

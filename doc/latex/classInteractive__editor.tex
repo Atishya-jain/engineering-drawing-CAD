@@ -1,0 +1,161 @@
+\hypertarget{classInteractive__editor}{}\section{Interactive\+\_\+editor Class Reference}
+\label{classInteractive__editor}\index{Interactive\+\_\+editor@{Interactive\+\_\+editor}}
+
+
+Editor class.  
+
+
+
+
+{\ttfamily \#include $<$Interactive\+Src.\+h$>$}
+
+
+
+Collaboration diagram for Interactive\+\_\+editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classInteractive__editor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classInteractive__editor_aa7d472e169eed213d1fcb874c6f5a6cd}{user\+Input} ()
+\item 
+void \hyperlink{classInteractive__editor_a8078ec1404bdd80e09320d14d198f628}{display\+Options} ()
+\item 
+void \hyperlink{classInteractive__editor_a5a7723f6affebd15ae935eb48e91359f}{draw\+Line} (\hyperlink{structpoint}{point} p1, \hyperlink{structpoint}{point} p2)
+\item 
+void \hyperlink{classInteractive__editor_a678c382483cb0b40d1616c1d28eaf200}{erase\+It} (\hyperlink{structpoint}{point} p1, \hyperlink{structpoint}{point} p2)
+\item 
+void \hyperlink{classInteractive__editor_aedd168ce9dc711e3756aafa44146cb76}{print} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ \hyperlink{classInteractive__editor_a1e77c81fdaf1da82816d476fa431fc34}{My\+Plane}
+\item 
+bool \hyperlink{classInteractive__editor_aa0de8abac09ce2259252fba6c1958e83}{line\+Draw}
+\item 
+bool \hyperlink{classInteractive__editor_ac2f2f1dfb6c21585d4ed5ed043e41b25}{erase}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Editor class. 
+
+This class contains the methods to edit a drawing or take the user input to draw on canvas.
+
+This class contains the methods to edit a drawing or to play with a model drawing 
+
+\subsection{Member Function Documentation}
+\index{Interactive\+\_\+editor@{Interactive\+\_\+editor}!display\+Options@{display\+Options}}
+\index{display\+Options@{display\+Options}!Interactive\+\_\+editor@{Interactive\+\_\+editor}}
+\subsubsection[{\texorpdfstring{display\+Options()}{displayOptions()}}]{\setlength{\rightskip}{0pt plus 5cm}void Interactive\+\_\+editor\+::display\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInteractive__editor_a8078ec1404bdd80e09320d14d198f628}{}\label{classInteractive__editor_a8078ec1404bdd80e09320d14d198f628}
+Will display the options/settings user desires
+
+Will display the options/settings user desires \begin{DoxySeeAlso}{See also}
+\hyperlink{classInteractive__editor_aa7d472e169eed213d1fcb874c6f5a6cd}{user\+Input()} 
+\end{DoxySeeAlso}
+\index{Interactive\+\_\+editor@{Interactive\+\_\+editor}!draw\+Line@{draw\+Line}}
+\index{draw\+Line@{draw\+Line}!Interactive\+\_\+editor@{Interactive\+\_\+editor}}
+\subsubsection[{\texorpdfstring{draw\+Line(point p1, point p2)}{drawLine(point p1, point p2)}}]{\setlength{\rightskip}{0pt plus 5cm}void Interactive\+\_\+editor\+::draw\+Line (
+\begin{DoxyParamCaption}
+\item[{{\bf point}}]{p1, }
+\item[{{\bf point}}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{classInteractive__editor_a5a7723f6affebd15ae935eb48e91359f}{}\label{classInteractive__editor_a5a7723f6affebd15ae935eb48e91359f}
+Will set the options/settings user desires 
+\begin{DoxyParams}{Parameters}
+{\em poin1} & To get 1st point of line. \\
+\hline
+{\em poin2} & To get 2nd point of line. \\
+\hline
+{\em thickness} & To get thickness of line. \\
+\hline
+{\em color} & To get color of the line.\\
+\hline
+\end{DoxyParams}
+Will make a graph to store the user desired line. 
+\begin{DoxyParams}{Parameters}
+{\em point1} & To get 1st point of line. \\
+\hline
+{\em point2} & To get 2nd point of line. \\
+\hline
+\end{DoxyParams}
+\index{Interactive\+\_\+editor@{Interactive\+\_\+editor}!erase\+It@{erase\+It}}
+\index{erase\+It@{erase\+It}!Interactive\+\_\+editor@{Interactive\+\_\+editor}}
+\subsubsection[{\texorpdfstring{erase\+It(point p1, point p2)}{eraseIt(point p1, point p2)}}]{\setlength{\rightskip}{0pt plus 5cm}void Interactive\+\_\+editor\+::erase\+It (
+\begin{DoxyParamCaption}
+\item[{{\bf point}}]{p1, }
+\item[{{\bf point}}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{classInteractive__editor_a678c382483cb0b40d1616c1d28eaf200}{}\label{classInteractive__editor_a678c382483cb0b40d1616c1d28eaf200}
+Will set the options/settings user desires
+
+Will erase the line user wishes to erase 
+\begin{DoxyParams}{Parameters}
+{\em point1} & To get the 1st point of line \\
+\hline
+{\em point2} & To get the 2nd point of line \\
+\hline
+\end{DoxyParams}
+\index{Interactive\+\_\+editor@{Interactive\+\_\+editor}!print@{print}}
+\index{print@{print}!Interactive\+\_\+editor@{Interactive\+\_\+editor}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}void Interactive\+\_\+editor\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInteractive__editor_aedd168ce9dc711e3756aafa44146cb76}{}\label{classInteractive__editor_aedd168ce9dc711e3756aafa44146cb76}
+To print the graph
+
+To print the graph on terminal \index{Interactive\+\_\+editor@{Interactive\+\_\+editor}!user\+Input@{user\+Input}}
+\index{user\+Input@{user\+Input}!Interactive\+\_\+editor@{Interactive\+\_\+editor}}
+\subsubsection[{\texorpdfstring{user\+Input()}{userInput()}}]{\setlength{\rightskip}{0pt plus 5cm}void Interactive\+\_\+editor\+::user\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInteractive__editor_aa7d472e169eed213d1fcb874c6f5a6cd}{}\label{classInteractive__editor_aa7d472e169eed213d1fcb874c6f5a6cd}
+Will set the options/settings user desires 
+\begin{DoxyParams}{Parameters}
+{\em drawing} & To check if user wants to draw something or want to edit the current drawing. \\
+\hline
+{\em linedraw} & To check if user wants to draw a line. \\
+\hline
+{\em circledraw} & To check if user wants to draw a cicle. \\
+\hline
+{\em erase} & To check if user wants to erase something. \\
+\hline
+{\em extrude} & To check if user wants to extrude a plane. \\
+\hline
+{\em flag3\+Dfile} & To check if file is input or an intercative input.\\
+\hline
+\end{DoxyParams}
+Will get the points the user wants to delete or draw. \begin{DoxySeeAlso}{See also}
+\hyperlink{classInteractive__editor_a5a7723f6affebd15ae935eb48e91359f}{draw\+Line()} 
+
+\hyperlink{classInteractive__editor_a678c382483cb0b40d1616c1d28eaf200}{erase\+It()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\index{Interactive\+\_\+editor@{Interactive\+\_\+editor}!erase@{erase}}
+\index{erase@{erase}!Interactive\+\_\+editor@{Interactive\+\_\+editor}}
+\subsubsection[{\texorpdfstring{erase}{erase}}]{\setlength{\rightskip}{0pt plus 5cm}bool Interactive\+\_\+editor\+::erase}\hypertarget{classInteractive__editor_ac2f2f1dfb6c21585d4ed5ed043e41b25}{}\label{classInteractive__editor_ac2f2f1dfb6c21585d4ed5ed043e41b25}
+This flag is set to identify whether user wants to erase something or not \index{Interactive\+\_\+editor@{Interactive\+\_\+editor}!line\+Draw@{line\+Draw}}
+\index{line\+Draw@{line\+Draw}!Interactive\+\_\+editor@{Interactive\+\_\+editor}}
+\subsubsection[{\texorpdfstring{line\+Draw}{lineDraw}}]{\setlength{\rightskip}{0pt plus 5cm}bool Interactive\+\_\+editor\+::line\+Draw}\hypertarget{classInteractive__editor_aa0de8abac09ce2259252fba6c1958e83}{}\label{classInteractive__editor_aa0de8abac09ce2259252fba6c1958e83}
+This flag is set to identify whether user wants to draw a line or not \index{Interactive\+\_\+editor@{Interactive\+\_\+editor}!My\+Plane@{My\+Plane}}
+\index{My\+Plane@{My\+Plane}!Interactive\+\_\+editor@{Interactive\+\_\+editor}}
+\subsubsection[{\texorpdfstring{My\+Plane}{MyPlane}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<${\bf point}$>$ $>$ Interactive\+\_\+editor\+::\+My\+Plane}\hypertarget{classInteractive__editor_a1e77c81fdaf1da82816d476fa431fc34}{}\label{classInteractive__editor_a1e77c81fdaf1da82816d476fa431fc34}
+This is a plane 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Include/\hyperlink{InteractiveSrc_8h}{Interactive\+Src.\+h}\item 
+Src/\hyperlink{InteractiveSrc_8cpp}{Interactive\+Src.\+cpp}\end{DoxyCompactItemize}

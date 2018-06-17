@@ -1,0 +1,128 @@
+\hypertarget{classInput}{}\section{Input Class Reference}
+\label{classInput}\index{Input@{Input}}
+
+
+\hyperlink{classInput}{Input} class.  
+
+
+
+
+{\ttfamily \#include $<$Input\+Src.\+h$>$}
+
+
+
+Collaboration diagram for Input\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classInput__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classInput_a45065353b80f9980111402e827aae0fe}{get\+File\+Name} (string \hyperlink{classInput_ad073fa115ead2e8b7492214215ebd22d}{file}, bool threeD)
+\item 
+void \hyperlink{classInput_a9d9395f68b01faa00f962791878723a2}{Read\+File} ()
+\item 
+void \hyperlink{classInput_a862e529a6ed3fcfd0719274a04174b7d}{print} ()
+\item 
+void \hyperlink{classInput_aced126e54ffa271b2a40f7e7a5e90376}{print3D} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classInput_af296359065236ac9139aab7736d6844d}{filename}
+\item 
+bool \hyperlink{classInput_ad073fa115ead2e8b7492214215ebd22d}{file} = false
+\item 
+bool \hyperlink{classInput_aacb0e034125e32179081a97eecab47df}{Three\+Dfile} = false
+\item 
+int \hyperlink{classInput_a82141fe9142aec447f9ef52fd2f78c73}{Two\+D\+File\+Count} = 0
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ \hyperlink{classInput_a55526617adbcb0db4b3d565f4dbe772d}{Two\+D\+Graph} \mbox{[}3\mbox{]}
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ \hyperlink{classInput_aed882deebbb45d8423e5477e8ccaee60}{Three\+D\+Graph}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classInput}{Input} class. 
+
+This class contains the methods to input content from a file etc..
+
+This class contains the methods to input content from a file or drawing etc.. 
+
+\subsection{Member Function Documentation}
+\index{Input@{Input}!get\+File\+Name@{get\+File\+Name}}
+\index{get\+File\+Name@{get\+File\+Name}!Input@{Input}}
+\subsubsection[{\texorpdfstring{get\+File\+Name(string file, bool three\+D)}{getFileName(string file, bool threeD)}}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+::get\+File\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{file, }
+\item[{bool}]{threeD}
+\end{DoxyParamCaption}
+)}\hypertarget{classInput_a45065353b80f9980111402e827aae0fe}{}\label{classInput_a45065353b80f9980111402e827aae0fe}
+Will prompt the user for filename or through G\+UI
+
+Will set the filename and type of file the user desires 
+\begin{DoxyParams}{Parameters}
+{\em file} & a string argument containing the filename \\
+\hline
+{\em threeD} & a boolean argument containing the type of file \\
+\hline
+\end{DoxyParams}
+\index{Input@{Input}!print@{print}}
+\index{print@{print}!Input@{Input}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInput_a862e529a6ed3fcfd0719274a04174b7d}{}\label{classInput_a862e529a6ed3fcfd0719274a04174b7d}
+Will print the 2D graph Y-\/Z projection on the terminal. Used mainly for debugging \index{Input@{Input}!print3D@{print3D}}
+\index{print3D@{print3D}!Input@{Input}}
+\subsubsection[{\texorpdfstring{print3\+D()}{print3D()}}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+::print3D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInput_aced126e54ffa271b2a40f7e7a5e90376}{}\label{classInput_aced126e54ffa271b2a40f7e7a5e90376}
+Will print the 3D graph on the terminal. Used mainly for debugging \index{Input@{Input}!Read\+File@{Read\+File}}
+\index{Read\+File@{Read\+File}!Input@{Input}}
+\subsubsection[{\texorpdfstring{Read\+File()}{ReadFile()}}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+::\+Read\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInput_a9d9395f68b01faa00f962791878723a2}{}\label{classInput_a9d9395f68b01faa00f962791878723a2}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a string argument. \\
+\hline
+{\em Three\+Dor\+TwoD} & boolean character to tell the type of file (3\+D/2D).\\
+\hline
+\end{DoxyParams}
+Will read the file user wants to input and process it to convert it into a graph to store the object 
+
+\subsection{Member Data Documentation}
+\index{Input@{Input}!file@{file}}
+\index{file@{file}!Input@{Input}}
+\subsubsection[{\texorpdfstring{file}{file}}]{\setlength{\rightskip}{0pt plus 5cm}bool Input\+::file = false}\hypertarget{classInput_ad073fa115ead2e8b7492214215ebd22d}{}\label{classInput_ad073fa115ead2e8b7492214215ebd22d}
+This is flag for checking interactive input or file input from the user \index{Input@{Input}!filename@{filename}}
+\index{filename@{filename}!Input@{Input}}
+\subsubsection[{\texorpdfstring{filename}{filename}}]{\setlength{\rightskip}{0pt plus 5cm}string Input\+::filename}\hypertarget{classInput_af296359065236ac9139aab7736d6844d}{}\label{classInput_af296359065236ac9139aab7736d6844d}
+This is the filename \index{Input@{Input}!Three\+Dfile@{Three\+Dfile}}
+\index{Three\+Dfile@{Three\+Dfile}!Input@{Input}}
+\subsubsection[{\texorpdfstring{Three\+Dfile}{ThreeDfile}}]{\setlength{\rightskip}{0pt plus 5cm}bool Input\+::\+Three\+Dfile = false}\hypertarget{classInput_aacb0e034125e32179081a97eecab47df}{}\label{classInput_aacb0e034125e32179081a97eecab47df}
+This is flag for checking whether file has 3D or 2D input \index{Input@{Input}!Three\+D\+Graph@{Three\+D\+Graph}}
+\index{Three\+D\+Graph@{Three\+D\+Graph}!Input@{Input}}
+\subsubsection[{\texorpdfstring{Three\+D\+Graph}{ThreeDGraph}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<${\bf point}$>$ $>$ Input\+::\+Three\+D\+Graph}\hypertarget{classInput_aed882deebbb45d8423e5477e8ccaee60}{}\label{classInput_aed882deebbb45d8423e5477e8ccaee60}
+This is the 3D graph \index{Input@{Input}!Two\+D\+File\+Count@{Two\+D\+File\+Count}}
+\index{Two\+D\+File\+Count@{Two\+D\+File\+Count}!Input@{Input}}
+\subsubsection[{\texorpdfstring{Two\+D\+File\+Count}{TwoDFileCount}}]{\setlength{\rightskip}{0pt plus 5cm}int Input\+::\+Two\+D\+File\+Count = 0}\hypertarget{classInput_a82141fe9142aec447f9ef52fd2f78c73}{}\label{classInput_a82141fe9142aec447f9ef52fd2f78c73}
+Count of 2D objects as there has to be 3 projections for our software to work on \index{Input@{Input}!Two\+D\+Graph@{Two\+D\+Graph}}
+\index{Two\+D\+Graph@{Two\+D\+Graph}!Input@{Input}}
+\subsubsection[{\texorpdfstring{Two\+D\+Graph}{TwoDGraph}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<${\bf point}$>$ $>$ Input\+::\+Two\+D\+Graph\mbox{[}3\mbox{]}}\hypertarget{classInput_a55526617adbcb0db4b3d565f4dbe772d}{}\label{classInput_a55526617adbcb0db4b3d565f4dbe772d}
+This is the array of orthographic projections 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Include/\hyperlink{InputSrc_8h}{Input\+Src.\+h}\item 
+Src/\hyperlink{InputSrc_8cpp}{Input\+Src.\+cpp}\end{DoxyCompactItemize}

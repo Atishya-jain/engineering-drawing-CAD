@@ -1,0 +1,84 @@
+\hypertarget{classTwoDGraph__class}{}\section{Two\+D\+Graph\+\_\+class Class Reference}
+\label{classTwoDGraph__class}\index{Two\+D\+Graph\+\_\+class@{Two\+D\+Graph\+\_\+class}}
+
+
+2D behaviour class.  
+
+
+
+
+{\ttfamily \#include $<$2\+D\+Processing\+Src.\+h$>$}
+
+
+
+Collaboration diagram for Two\+D\+Graph\+\_\+class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classTwoDGraph__class__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classTwoDGraph__class_a48222790dda1c34caf1366ce1cc0ce1d}{Two\+Dto\+ThreeD} ()
+\begin{DoxyCompactList}\small\item\em A Member function. \end{DoxyCompactList}\item 
+void {\bfseries print3D} ()\hypertarget{classTwoDGraph__class_a767c2d4861c0b78aa617e1403fcb65e1}{}\label{classTwoDGraph__class_a767c2d4861c0b78aa617e1403fcb65e1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ \hyperlink{classTwoDGraph__class_aab69ccead28f685a9e084f52e1488354}{Two\+D\+Graph} \mbox{[}3\mbox{]}
+\item 
+map$<$ string, vector$<$ \hyperlink{structpoint}{point} $>$ $>$ \hyperlink{classTwoDGraph__class_a6b9cd70ed1be50fb248b56f6da30a3c5}{Three\+D\+Graph}
+\item 
+map$<$ string, vector$<$ vector$<$ \hyperlink{structedge}{edge} $>$ $>$ $>$ \hyperlink{classTwoDGraph__class_a80d22cc10e3cfa2d3f090bc0b506e2ea}{face\+Set}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+2D behaviour class. 
+
+This class has all the functionalities that a 2D object can possess in the software. It can be rotated and converted into isometric from 2 orthographic projections along some plane. 
+
+\subsection{Member Function Documentation}
+\index{Two\+D\+Graph\+\_\+class@{Two\+D\+Graph\+\_\+class}!Two\+Dto\+ThreeD@{Two\+Dto\+ThreeD}}
+\index{Two\+Dto\+ThreeD@{Two\+Dto\+ThreeD}!Two\+D\+Graph\+\_\+class@{Two\+D\+Graph\+\_\+class}}
+\subsubsection[{\texorpdfstring{Two\+Dto\+Three\+D()}{TwoDtoThreeD()}}]{\setlength{\rightskip}{0pt plus 5cm}void Two\+D\+Graph\+\_\+class\+::\+Two\+Dto\+ThreeD (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwoDGraph__class_a48222790dda1c34caf1366ce1cc0ce1d}{}\label{classTwoDGraph__class_a48222790dda1c34caf1366ce1cc0ce1d}
+
+
+A Member function. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classTwoDGraph__class_a48222790dda1c34caf1366ce1cc0ce1d}{Two\+Dto\+Three\+D()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & a string argument. \\
+\hline
+{\em flag3\+Dfile} & boolean character to tell the type of file (3\+D/2D). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Two\+D\+Graph\+\_\+class@{Two\+D\+Graph\+\_\+class}!face\+Set@{face\+Set}}
+\index{face\+Set@{face\+Set}!Two\+D\+Graph\+\_\+class@{Two\+D\+Graph\+\_\+class}}
+\subsubsection[{\texorpdfstring{face\+Set}{faceSet}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,vector$<$vector$<${\bf edge}$>$ $>$ $>$ Two\+D\+Graph\+\_\+class\+::face\+Set}\hypertarget{classTwoDGraph__class_a80d22cc10e3cfa2d3f090bc0b506e2ea}{}\label{classTwoDGraph__class_a80d22cc10e3cfa2d3f090bc0b506e2ea}
+This consists of the faces. It would be a dictionary with face equation as keys as values as those edges which lie in that plane \index{Two\+D\+Graph\+\_\+class@{Two\+D\+Graph\+\_\+class}!Three\+D\+Graph@{Three\+D\+Graph}}
+\index{Three\+D\+Graph@{Three\+D\+Graph}!Two\+D\+Graph\+\_\+class@{Two\+D\+Graph\+\_\+class}}
+\subsubsection[{\texorpdfstring{Three\+D\+Graph}{ThreeDGraph}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<${\bf point}$>$ $>$ Two\+D\+Graph\+\_\+class\+::\+Three\+D\+Graph}\hypertarget{classTwoDGraph__class_a6b9cd70ed1be50fb248b56f6da30a3c5}{}\label{classTwoDGraph__class_a6b9cd70ed1be50fb248b56f6da30a3c5}
+This is the 3D graph representation \index{Two\+D\+Graph\+\_\+class@{Two\+D\+Graph\+\_\+class}!Two\+D\+Graph@{Two\+D\+Graph}}
+\index{Two\+D\+Graph@{Two\+D\+Graph}!Two\+D\+Graph\+\_\+class@{Two\+D\+Graph\+\_\+class}}
+\subsubsection[{\texorpdfstring{Two\+D\+Graph}{TwoDGraph}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<${\bf point}$>$ $>$ Two\+D\+Graph\+\_\+class\+::\+Two\+D\+Graph\mbox{[}3\mbox{]}}\hypertarget{classTwoDGraph__class_aab69ccead28f685a9e084f52e1488354}{}\label{classTwoDGraph__class_aab69ccead28f685a9e084f52e1488354}
+This is the orthographic projections 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Include/\hyperlink{2DProcessingSrc_8h}{2\+D\+Processing\+Src.\+h}\item 
+Src/\hyperlink{2DProcessingSrc_8cpp}{2\+D\+Processing\+Src.\+cpp}\end{DoxyCompactItemize}
